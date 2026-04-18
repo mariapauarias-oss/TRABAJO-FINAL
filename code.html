@@ -1,0 +1,437 @@
+<!DOCTYPE html>
+
+<html class="light" lang="es"><head>
+<meta charset="utf-8"/>
+<meta content="width=device-width, initial-scale=1.0" name="viewport"/>
+<title>CLINICAL SANCTUARY | Ciencia Capilar Avanzada</title>
+<script src="https://cdn.tailwindcss.com?plugins=forms,container-queries"></script>
+<link href="https://fonts.googleapis.com/css2?family=Manrope:wght@200;300;400;500;600;700;800&amp;display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/>
+<script id="tailwind-config">
+        tailwind.config = {
+            darkMode: "class",
+            theme: {
+                extend: {
+                    "colors": {
+                        "background": "#f8faf9",
+                        "on-secondary-fixed": "#0d1f19",
+                        "on-surface": "#191c1c",
+                        "surface-container": "#eceeed",
+                        "on-secondary": "#ffffff",
+                        "outline": "#6f7974",
+                        "surface-variant": "#e1e3e2",
+                        "tertiary": "#8e4b44",
+                        "on-primary": "#ffffff",
+                        "error": "#ba1a1a",
+                        "tertiary-fixed-dim": "#ffb4ab",
+                        "inverse-primary": "#93d4b9",
+                        "surface-container-high": "#e6e9e8",
+                        "on-secondary-container": "#54675f",
+                        "on-tertiary-container": "#783a33",
+                        "on-primary-fixed-variant": "#05513d",
+                        "secondary": "#50625b",
+                        "on-tertiary": "#ffffff",
+                        "secondary-fixed-dim": "#b7cbc2",
+                        "secondary-container": "#d0e4db",
+                        "on-primary-fixed": "#002117",
+                        "outline-variant": "#bec9c3",
+                        "surface-tint": "#286954",
+                        "primary-container": "#89cab0",
+                        "on-error": "#ffffff",
+                        "inverse-on-surface": "#eff1f0",
+                        "surface-container-low": "#f2f4f3",
+                        "on-primary-container": "#0f5642",
+                        "primary-fixed": "#aef0d5",
+                        "primary-fixed-dim": "#93d4b9",
+                        "on-tertiary-fixed-variant": "#71352e",
+                        "tertiary-container": "#fca79d",
+                        "on-tertiary-fixed": "#3a0a08",
+                        "surface-container-lowest": "#ffffff",
+                        "tertiary-fixed": "#ffdad5",
+                        "on-background": "#191c1c",
+                        "surface-dim": "#d8dad9",
+                        "surface-bright": "#f8faf9",
+                        "secondary-fixed": "#d3e7de",
+                        "inverse-surface": "#2e3131",
+                        "on-secondary-fixed-variant": "#384b44",
+                        "surface-container-highest": "#e1e3e2",
+                        "error-container": "#ffdad6",
+                        "on-surface-variant": "#3f4945",
+                        "on-error-container": "#93000a",
+                        "primary": "#286954",
+                        "surface": "#f8faf9"
+                    },
+                    "borderRadius": {
+                        "DEFAULT": "0.125rem",
+                        "lg": "0.25rem",
+                        "xl": "0.5rem",
+                        "full": "0.75rem"
+                    },
+                    "fontFamily": {
+                        "headline": ["Manrope"],
+                        "body": ["Manrope"],
+                        "label": ["Manrope"]
+                    }
+                },
+            },
+        }
+    </script>
+<style>
+        .material-symbols-outlined {
+            font-variation-settings: 'FILL' 0, 'wght' 400, 'GRAD' 0, 'opsz' 24;
+        }
+        .bg-signature-gradient {
+            background: linear-gradient(135deg, #286954 0%, #89cab0 100%);
+        }
+        .glass-badge {
+            background: rgba(255, 255, 255, 0.7);
+            backdrop-filter: blur(20px);
+        }
+        .text-shadow-subtle {
+            text-shadow: 0 2px 4px rgba(0,0,0,0.05);
+        }
+    </style>
+</head>
+<body class="bg-background font-body text-on-surface antialiased">
+<!-- TopNavBar -->
+<nav class="fixed top-0 w-full z-50 bg-[#f8faf9]/80 backdrop-blur-xl dark:bg-[#191c1c]/80">
+<div class="flex justify-between items-center px-8 py-4 max-w-7xl mx-auto">
+<span class="text-xl font-extrabold tracking-[-0.02em] text-[#286954] dark:text-[#82CBB2] font-manrope antialiased tracking-tight">CLINICAL SANCTUARY</span>
+<div class="hidden md:flex gap-8">
+<a class="text-[#286954] dark:text-[#82CBB2] font-semibold border-b-2 border-[#286954] pb-1 font-manrope antialiased tracking-tight" href="#">Beneficios</a>
+<a class="text-[#3f4945] dark:text-[#bec9c3] hover:text-[#286954] transition-colors font-manrope antialiased tracking-tight" href="#">Catálogo</a>
+<a class="text-[#3f4945] dark:text-[#bec9c3] hover:text-[#286954] transition-colors font-manrope antialiased tracking-tight" href="#">Potenciadores</a>
+<a class="text-[#3f4945] dark:text-[#bec9c3] hover:text-[#286954] transition-colors font-manrope antialiased tracking-tight" href="#">Resultados</a>
+</div>
+<a href="#contacto-form" class="inline-block bg-[#286954] text-white px-6 py-2.5 rounded-lg font-semibold hover:bg-signature-gradient scale-95 active:scale-100 duration-200 transition-all font-manrope antialiased tracking-tight">
+                Quiero recuperar mi cabello
+            </a>
+</div>
+</nav>
+<main class="pt-20">
+<!-- Hero Section -->
+<section class="relative overflow-hidden min-h-[921px] flex items-center px-8">
+<div class="max-w-7xl mx-auto grid grid-cols-1 md:grid-cols-2 gap-12 items-center">
+<div class="z-10">
+<span class="uppercase tracking-widest text-sm font-bold text-primary mb-4 block">Ciencia Capilar de Grado Médico</span>
+<h1 class="text-5xl md:text-7xl font-extrabold tracking-[-0.02em] text-on-surface leading-[1.1] mb-6">
+                        Recupera tu <span class="text-primary">Densidad</span>, Restaura tu Confianza.
+                    </h1>
+<p class="text-on-surface-variant text-lg md:text-xl mb-10 max-w-lg leading-relaxed">
+                        Fórmulas avanzadas diseñadas en laboratorios clínicos para combatir la caída del cabello desde la raíz, sin efectos secundarios y con resultados visibles.
+                    </p>
+<div class="flex flex-wrap gap-4">
+<a href="#contacto-form" class="inline-block bg-primary text-on-primary px-8 py-4 rounded-lg font-bold text-lg hover:bg-signature-gradient transition-all shadow-xl shadow-primary/10">
+                            Quiero recuperar mi cabello
+                        </a>
+<div class="flex items-center gap-3 px-4">
+<div class="flex -space-x-2">
+<img class="w-10 h-10 rounded-full border-2 border-background object-cover" data-alt="close-up portrait of a woman with healthy glowing skin and thick shiny hair" src="https://lh3.googleusercontent.com/aida-public/AB6AXuCR2p_mEuTDIcNHGdjnqFy0bmJN7qQwR0-43gW6z-FGVNaKxkmDcG-vi1Xo8Wfguvr_KWrF5rNp5JENWbk_vzDLWzw06qIRQWbLAHw97oGgVMbR3WdgrCm26JvkejRKG3ORJkOWwt800sW4srlWrOBJHb1U2h1KfaxRUCKjFhpItFC5MpQ_LUxUYG8NKFq395r79NhWgsjWacnF52mQXArn9nh85n5WtZFBRGrOGhwkPlA0VayLjSMio3vKl5_LIxDRJFb1D5HEBto"/>
+<img class="w-10 h-10 rounded-full border-2 border-background object-cover" data-alt="close-up portrait of a man with thick healthy well-groomed hair and confident expression" src="https://lh3.googleusercontent.com/aida-public/AB6AXuCnofGCHzNWqiwSjcaJnY16g7nhPvwB2yZs2O3GdJj7uZF6eVS30AEFo6TD6eYSw4XXF7vVRjuRfbAzm3XlTMvEvN-nbIIsk5HKzcRf5EsB-kHHgvtftBwR4DqeJqkb5QV4ML-X95VqKvd4K1qVaZXU7dt1jIoxva-TiMmjrUFK3jAtQIfNyPwLxc-qnQuw2ltEyopvOrQWYD2GAMr5cty7DJSNFXCWwFWUzQnyuLkm-WJEA6udGsy_3HEPyAgu2Mf95v-eLLICYHM"/>
+</div>
+<span class="text-sm font-semibold text-on-surface-variant">+2,500 clientes satisfechos</span>
+</div>
+</div>
+</div>
+<div class="relative">
+<div class="absolute -right-20 -top-20 w-[120%] h-[120%] bg-primary-fixed rounded-full opacity-20 blur-3xl"></div>
+<div class="relative z-10 p-8">
+<img class="w-full h-auto drop-shadow-[0_20px_40px_rgba(25,28,28,0.06)] rounded-2xl transform md:rotate-2" data-alt="premium serum bottle in clinical glass with elegant typography standing on a minimalist stone surface with soft shadows" src="https://lh3.googleusercontent.com/aida-public/AB6AXuBMuo2BoolYpo0_oVd7_HH0I68TMNVuKvM33ihV2eiaF6qognVFMliqr3tWxTPnPQn-aTE0xyjmqKOTcyjhoQqbJbtYBQTcR6b5oVst8a9gk-6620r4MfqcS7hlVkK4_aRaa1IqLWQJRR2a1EdDa0RjYzKedAYYl8M7_ldI35HScL43WGmsgwfdNIp19NwS-WVblyku2hliw8-wtAtJ_Jap-KKes8avrr_trfuZwf9-HPwTG_Gu8rNTzrjEmCSIxEdlOY12FBnmnr8"/>
+<div class="absolute top-1/2 -left-8 glass-badge p-4 rounded-xl shadow-lg border border-white/20">
+<div class="flex items-center gap-3">
+<span class="material-symbols-outlined text-primary" style="font-variation-settings: 'FILL' 1;">verified</span>
+<div>
+<p class="text-xs font-bold uppercase tracking-wider text-on-surface">Eficacia Probada</p>
+<p class="text-lg font-extrabold text-primary">94% de éxito</p>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+</section>
+<!-- Key Benefits -->
+<section class="py-24 bg-surface-container-low px-8">
+<div class="max-w-7xl mx-auto">
+<div class="text-center mb-16">
+<h2 class="text-3xl md:text-4xl font-extrabold tracking-tight mb-4 text-on-surface">¿Por qué elegir Clinical Sanctuary?</h2>
+<p class="text-on-surface-variant max-w-2xl mx-auto">Nuestra aproximación combina la biotecnología moderna con el cuidado más delicado para tu cuero cabelludo.</p>
+</div>
+<div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-8">
+<div class="bg-surface-container-lowest p-8 rounded-xl transition-all hover:translate-y-[-4px]">
+<span class="material-symbols-outlined text-4xl text-primary mb-6">eco</span>
+<h3 class="text-xl font-bold mb-3 text-on-surface">Ingredientes Naturales</h3>
+<p class="text-on-surface-variant leading-relaxed">Extractos botánicos puros seleccionados por su alta biodisponibilidad y potencia.</p>
+</div>
+<div class="bg-surface-container-lowest p-8 rounded-xl transition-all hover:translate-y-[-4px]">
+<span class="material-symbols-outlined text-4xl text-primary mb-6">calendar_today</span>
+<h3 class="text-xl font-bold mb-3 text-on-surface">Resultados en 30 Días</h3>
+<p class="text-on-surface-variant leading-relaxed">Nuestros protocolos clínicos demuestran cambios visibles en el primer mes de uso.</p>
+</div>
+<div class="bg-surface-container-lowest p-8 rounded-xl transition-all hover:translate-y-[-4px]">
+<span class="material-symbols-outlined text-4xl text-primary mb-6">auto_awesome</span>
+<h3 class="text-xl font-bold mb-3 text-on-surface">Aplicación Fácil</h3>
+<p class="text-on-surface-variant leading-relaxed">Fórmula no grasa de rápida absorción que no interfiere con tu rutina diaria.</p>
+</div>
+<div class="bg-surface-container-lowest p-8 rounded-xl transition-all hover:translate-y-[-4px]">
+<span class="material-symbols-outlined text-4xl text-primary mb-6">health_and_safety</span>
+<h3 class="text-xl font-bold mb-3 text-on-surface">Sin Efectos Secundarios</h3>
+<p class="text-on-surface-variant leading-relaxed">Libre de hormonas y químicos agresivos. Dermatológicamente testeado en humanos.</p>
+</div>
+</div>
+</div>
+</section>
+<!-- Product Catalog -->
+<section class="py-24 px-8 overflow-hidden">
+<div class="max-w-7xl mx-auto">
+<div class="flex flex-col md:flex-row justify-between items-end mb-16 gap-6">
+<div class="max-w-xl">
+<h2 class="text-4xl md:text-5xl font-extrabold tracking-tight mb-4">Elige tu Protocolo</h2>
+<p class="text-on-surface-variant">Diferentes presentaciones adaptadas a tu etapa de tratamiento. Cada botella es un paso hacia tu mejor versión.</p>
+</div>
+<div class="flex gap-2">
+<span class="bg-secondary-fixed text-on-secondary-fixed-variant px-4 py-1.5 rounded-full text-xs font-bold uppercase tracking-widest">Minoxidil 5%</span>
+<span class="bg-secondary-fixed text-on-secondary-fixed-variant px-4 py-1.5 rounded-full text-xs font-bold uppercase tracking-widest">Biotina</span>
+</div>
+</div>
+<div class="grid grid-cols-1 md:grid-cols-3 gap-8">
+<!-- Traveler 60ml -->
+<div class="bg-surface p-6 rounded-2xl border border-outline-variant/20 flex flex-col group">
+<div class="mb-8 overflow-hidden rounded-xl bg-surface-container-low aspect-square flex items-center justify-center">
+<img class="w-4/5 transform group-hover:scale-105 transition-transform duration-500" data-alt="small 60ml clinical dropper bottle on a clean white surface with soft mint green reflections" src="https://lh3.googleusercontent.com/aida-public/AB6AXuBcODoiEFtgR1Kdfmjabs1CdUCRwFMEV6J9QUB4yKFynqq_0f6PKbKkiVxvPqZG5aHKtkmFpeEylZ8yDch8gqY3tsX_Ov6YEacx2DJnwKTzqwyU50ytdywAH_EOtvShhapmdNExOE-vn2wM62I9E1G1wesNUlrDNSmwup9c6CKcmEG9lKT86wcNcgXpO4XBlaKfs6mZfO7M2WANL3Kx-lR-k3eEIcNS_YE6dDbCxgNqAfzHOt0OHxykWIAzu6D_VgIeF6YXRgSb9lA"/>
+</div>
+<h3 class="text-2xl font-bold mb-1">Viajero (60ml)</h3>
+<p class="text-on-surface-variant text-sm mb-6">Ideal para probar o llevar en tu maleta.</p>
+<div class="mt-auto">
+<p class="text-3xl font-extrabold text-primary mb-6">$39.00 <span class="text-sm font-medium text-on-surface-variant">USD</span></p>
+<a href="#contacto-form" class="block text-center w-full bg-secondary-container text-on-secondary-container py-3 rounded-lg font-bold hover:bg-primary hover:text-on-primary transition-all">Comprar ahora</a>
+</div>
+</div>
+<!-- Standard 120ml -->
+<div class="bg-surface p-6 rounded-2xl border-2 border-primary relative flex flex-col group shadow-2xl shadow-primary/5">
+<div class="absolute -top-4 left-1/2 -translate-x-1/2 bg-primary text-on-primary px-4 py-1 rounded-full text-xs font-bold uppercase tracking-widest">Más Popular</div>
+<div class="mb-8 overflow-hidden rounded-xl bg-primary-fixed/30 aspect-square flex items-center justify-center">
+<img class="w-4/5 transform group-hover:scale-105 transition-transform duration-500" data-alt="120ml premium hair serum bottle standing on a floating glass pedestal with soft focus background" src="https://lh3.googleusercontent.com/aida-public/AB6AXuBEKLfZ5wBKe94AhohwqMfOKdKUI3QO5t4tPreI3zpECzCCXS-D9Zn_mWgG2PqZg0JMuU-v5WI2hSbz_mQulcA2Qiv2PCz7uD1tnzjV8uKYbqAs-zKn6rWaj-6QE6MgX07ck-PS9wkDnkKFL8JlkWoEs5kwdQZpgSZtM3ABGIqcu_w5bJsqjgcjIwl0otnIe9em8ZF2t5AQKP8xrpB0Zy5BGRmRz1EV52s3oyAmhOFxfOG8jbFMbsMtlb0Lu3DfQ17Xnr7sTxLlnX4"/>
+</div>
+<h3 class="text-2xl font-bold mb-1">Estándar (120ml)</h3>
+<p class="text-on-surface-variant text-sm mb-6">El tratamiento base recomendado por expertos.</p>
+<div class="mt-auto">
+<p class="text-3xl font-extrabold text-primary mb-6">$69.00 <span class="text-sm font-medium text-on-surface-variant">USD</span></p>
+<a href="#contacto-form" class="block text-center w-full bg-signature-gradient text-on-primary py-3 rounded-lg font-bold shadow-lg transition-all">Comprar ahora</a>
+</div>
+</div>
+<!-- Savings 250ml -->
+<div class="bg-surface p-6 rounded-2xl border border-outline-variant/20 flex flex-col group">
+<div class="mb-8 overflow-hidden rounded-xl bg-surface-container-low aspect-square flex items-center justify-center">
+<img class="w-4/5 transform group-hover:scale-105 transition-transform duration-500" data-alt="large 250ml clinical bottle for family savings set against a soft grey and white background" src="https://lh3.googleusercontent.com/aida-public/AB6AXuBIUPZgqsOXT2VW7Y2ZPCPgS3XCBijryCQn8VGjSTV-HzlHAdDaEl2yMxzVzCihU9s8hY6E4jfov0nlX9qVyPA0m2fZQ4txvFRUUDDyJk_TpJhgz_b4ffdiPSIc59cuM0dpWLIGQJnG1krv_8TZMd7QC80SEukc01LjI5dUwiC0AM8CubAsF4MV_jGzo5fnRw6b634TOqxjNhhTdLaLw13yj902jra6mrIlU7yoy876kgtLf9lkL0IJnZ1-2vuMexNOVLvYVnepn94"/>
+</div>
+<h3 class="text-2xl font-bold mb-1">Ahorro Familiar (250ml)</h3>
+<p class="text-on-surface-variant text-sm mb-6">Tratamiento completo para 3 meses.</p>
+<div class="mt-auto">
+<p class="text-3xl font-extrabold text-primary mb-6">$119.00 <span class="text-sm font-medium text-on-surface-variant">USD</span></p>
+<a href="#contacto-form" class="block text-center w-full bg-secondary-container text-on-secondary-container py-3 rounded-lg font-bold hover:bg-primary hover:text-on-primary transition-all">Comprar ahora</a>
+</div>
+</div>
+</div>
+</div>
+</section>
+<!-- Cross-selling Section -->
+<section class="py-24 bg-primary/5 px-8">
+<div class="max-w-7xl mx-auto">
+<div class="grid grid-cols-1 md:grid-cols-2 gap-16 items-center">
+<div>
+<h2 class="text-4xl font-extrabold tracking-tight mb-6">Potencia tus resultados</h2>
+<p class="text-on-surface-variant text-lg mb-10">Complementa tu tratamiento con accesorios diseñados para mejorar la circulación y absorción de nuestra fórmula magistral.</p>
+<div class="space-y-6">
+<div class="flex items-center gap-6 p-4 bg-surface rounded-xl border border-outline-variant/10">
+<div class="w-20 h-20 bg-surface-container-low rounded-lg overflow-hidden flex-shrink-0">
+<img class="w-full h-full object-cover" data-alt="silicone scalp massager with soft bristles in a neutral minimalist setting" src="https://lh3.googleusercontent.com/aida-public/AB6AXuC8-Mu69zrKDS7350UsTqijqtDrz0z8N6WLk04uwRnhyNdGoi-UqhrVXLcKwQEZBsaGLFoarkgQApeWR7UZR-yH9SG61Nz0jKvIR7r3hWdmU_O_SIwdQz5IBJmPdAlOm5SMITQu-TEFM6zeP_SmFgFiclrhJW_iaempPbbYRTZCf6inraJmx0-U0jcAfwY6EtSGzZJUpjt2ddJhrmOEa7G4FAg8JCdpW37zDhcWxcdpJpRAJ8kahJjovg6oO6mF5EmpXkU6-42BBlw"/>
+</div>
+<div class="flex-grow">
+<h4 class="font-bold">Masajeador de Silicona</h4>
+<p class="text-sm text-on-surface-variant">Mejora la microcirculación capilar.</p>
+</div>
+<span class="font-bold text-primary">$15.00</span>
+</div>
+<div class="flex items-center gap-6 p-4 bg-surface rounded-xl border border-outline-variant/10">
+<div class="w-20 h-20 bg-surface-container-low rounded-lg overflow-hidden flex-shrink-0">
+<img class="w-full h-full object-cover" data-alt="natural sandalwood comb with beautiful wood grain on a white linen surface" src="https://lh3.googleusercontent.com/aida-public/AB6AXuDTBO4ogV8kv_KcMbisWTs-tE12YADCNOL73TfwUEjfaCTT0nxzEQ6QyxCeR-IxVxbcjNOcGK9reityMwVJkRgYbJY-gEzsRsF38Ko5MlbjacVMkSp_lP7kI-dO1Q6AqEdwWQRKr2ujwRxqfXTelusZhmiorZwgNWC4hJ5QhX98RQ802Av4flw5fye-wsUpOOIdspSdn76Zux0fI82W0N4BGB1ZyoETxdS_C-2pFqfZcYy-XY6Kv-N_lBw5FMGWdn1ghHjyfMmHnFI"/>
+</div>
+<div class="flex-grow">
+<h4 class="font-bold">Peine de Sándalo</h4>
+<p class="text-sm text-on-surface-variant">Reduce el frizz y evita el quiebre.</p>
+</div>
+<span class="font-bold text-primary">$12.00</span>
+</div>
+<div class="flex items-center gap-6 p-4 bg-surface rounded-xl border border-outline-variant/10">
+<div class="w-20 h-20 bg-surface-container-low rounded-lg overflow-hidden flex-shrink-0">
+<img class="w-full h-full object-cover" data-alt="amber glass bottle of vitamin supplements with a clean clinical label" src="https://lh3.googleusercontent.com/aida-public/AB6AXuC77GPCSEUyqmnLdLjwz5LOI0Qbv6HgWFNIZ4hpo2i-r2zXdam_jWI2T709reNxS-hPUS4lje40K0PtYeYLv6i9BnzLLedgvmAHxOcihnKIC3gYaxveAMHyZGMdZ1Nm9fmTXVo0ipFkvD4jvCb4AWkcIB6UM9ZYR1h2O3L9cWTN1cYa8JEPPfbClv5ZAFj2nLQDAsuhhqrv5-S0TNZ32-0bA_lRseZqa3ggSY7RlTTc6ToysfVxC8d8X8bycRMmdohQ4XwlLBOttqM"/>
+</div>
+<div class="flex-grow">
+<h4 class="font-bold">Suplementos Vitamínicos</h4>
+<p class="text-sm text-on-surface-variant">Fortalece el cabello desde el interior.</p>
+</div>
+<span class="font-bold text-primary">$29.00</span>
+</div>
+</div>
+</div>
+<div class="relative hidden md:block">
+<div class="aspect-[4/5] rounded-3xl overflow-hidden shadow-2xl">
+<img class="w-full h-full object-cover" data-alt="aesthetic close-up of a person with very long healthy thick hair being brushed gently in soft morning light" src="https://lh3.googleusercontent.com/aida-public/AB6AXuAmEzlbZydopcNChjgSKngQfyGn8FXFJlX-qRJvPKR-1jBKewxgBD5oE4Pv5RemJCcFznrSXAfMlRNgHuh8u0zgXK4IFTyaJzoWONcKm-K7h819NAX1jqnospcVUtLisxcSvoOraTf_epXrBytrboZRxw7ITXVSMrduAyBqc_7_r2o55s2Il-pbLACk-V7WuzfmQ9jpyBerSig7XV_DyrluoP4kLHIc16Ad3tVzUVx2_wcypUw8wbSA72C3JPmIOOkohjE3ulEyfB4"/>
+</div>
+<div class="absolute -bottom-8 -left-8 bg-surface-container-lowest p-8 rounded-2xl shadow-xl max-w-[280px]">
+<p class="text-primary italic font-medium mb-4 text-lg">"El masajeador cambió mi rutina. Siento que el serum se absorbe mucho mejor ahora."</p>
+<p class="font-bold text-sm">— Elena M., Usuaria Verificada</p>
+</div>
+</div>
+</div>
+</div>
+</section>
+<!-- Social Proof Section -->
+<section class="py-24 px-8 bg-surface">
+<div class="max-w-7xl mx-auto">
+<div class="text-center mb-16">
+<h2 class="text-4xl font-extrabold tracking-tight mb-4">Evidencia Real</h2>
+<p class="text-on-surface-variant">Cientos de vidas transformadas a través de la ciencia capilar.</p>
+</div>
+<!-- Before & After Grid -->
+<div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8 mb-20">
+<div class="space-y-4">
+<div class="grid grid-cols-2 gap-2 rounded-2xl overflow-hidden h-64 shadow-md">
+<img class="w-full h-full object-cover" data-alt="macro close-up of thinning scalp before treatment with clear view of hair follicles" src="https://lh3.googleusercontent.com/aida-public/AB6AXuC2ls9BgEcspcga3_8NADZkth5i-fiK1lzznRH8pKBvWOEoUWPYnd8gCzBdlfJQX4hatLZCppQVkLVzsZKJlK-oI8XA8t-zPyxRQDySaGdIVH8bKEym_cAxjJhGWtSPgbHYZShq-N2nuKInzi-O7rs_oXG348SW4EcygwgmMTQGvtQ7-ijItPxcEHgUs3SIORCS8Nv5QyfLrjrZMY8ge7cU6tSavaPLL8dO2oorYZ1JfTHOwdsoeQiGSod98EczKvTOvBx7D0yha_g"/>
+<img class="w-full h-full object-cover" data-alt="macro close-up of healthy dense hair growth after 3 months of treatment on the same scalp area" src="https://lh3.googleusercontent.com/aida-public/AB6AXuAxjoqHVLmFsawJhdMYliXwyCB8EJZ8jTfX-V9QI11py1yfOePoc3-Woh1Z5mj9ii6hkptBaZfDf_m-DgZD0awghrKHcL40mS0yTa9XPw9ty9AB29G20blAEECfx8tIsUBfMH_mA_ih7_SmvQ96xI9GAhOiowNo1EhGCrysvsCc0916adLyAVxUCdS5ddSqPJNxfwG9lLmehsM73oBp_GtvHR8sH0GcbskHocrgZmjUmlFYRrStn5FAOG5udHYwpvQhdKrr942bx4I"/>
+</div>
+<div class="flex justify-between items-center px-2">
+<span class="text-sm font-bold uppercase tracking-widest text-on-surface-variant">Caso 01: 90 Días</span>
+<div class="flex text-[#ffb400]">
+<span class="material-symbols-outlined text-sm" style="font-variation-settings: 'FILL' 1;">star</span>
+<span class="material-symbols-outlined text-sm" style="font-variation-settings: 'FILL' 1;">star</span>
+<span class="material-symbols-outlined text-sm" style="font-variation-settings: 'FILL' 1;">star</span>
+<span class="material-symbols-outlined text-sm" style="font-variation-settings: 'FILL' 1;">star</span>
+<span class="material-symbols-outlined text-sm" style="font-variation-settings: 'FILL' 1;">star</span>
+</div>
+</div>
+</div>
+<div class="space-y-4">
+<div class="grid grid-cols-2 gap-2 rounded-2xl overflow-hidden h-64 shadow-md">
+<img class="w-full h-full object-cover" data-alt="close-up of receding hairline before treatment showing visible thinning at the temples" src="https://lh3.googleusercontent.com/aida-public/AB6AXuB_mo0eeeK-2lfsoAX-jcfh3EITHLOvVKfAowl1dM6SocvsELzlBZiZiGWeyEloTbD8ejwSqsmk9-_uKSZY8v7YDzrxTvTH_lcfwJxIk9V9kmGIkUnQg90dwunMoPtGA-U_z1aJIsFBD085CyuRBg-KHeIItVQci_drez9YHk3LKR77Qzb9W4yiYLtoDpf5Mod5UlI-kgVb27oUZtQxaVvPtpgn2vzqHpTMXSS2-xvwC7M_Enh1l52ybmN-ZjkqK3weTGF0q3XQnc8"/>
+<img class="w-full h-full object-cover" data-alt="close-up of restored hairline with new thick hair growth after consistent clinical treatment" src="https://lh3.googleusercontent.com/aida-public/AB6AXuDYK7h_bv_X-pHY3mEYc3APL5fdf3QtreTZuTy99zxJC37x8Z8z-E4fuK40kPvaLOWslxDGE51DOOO48oEhb4ttpQfmGj2FlMTW2bnll8BpKnQjDOzgK-asq3jES5qmoBDyADbIKUnZOHl26ORydUqkxW2NbFkffZyUrtn8UXqckMTKEnv0MW_FWrcN4q3kmKIUm_dcbzJM1WMH-aSCkNNoTM48RqIMuh09BK8Lyly2frYvNwhQjfDmuIqAVkZWkgycsBO-j7Qad7Q"/>
+</div>
+<div class="flex justify-between items-center px-2">
+<span class="text-sm font-bold uppercase tracking-widest text-on-surface-variant">Caso 02: 60 Días</span>
+<div class="flex text-[#ffb400]">
+<span class="material-symbols-outlined text-sm" style="font-variation-settings: 'FILL' 1;">star</span>
+<span class="material-symbols-outlined text-sm" style="font-variation-settings: 'FILL' 1;">star</span>
+<span class="material-symbols-outlined text-sm" style="font-variation-settings: 'FILL' 1;">star</span>
+<span class="material-symbols-outlined text-sm" style="font-variation-settings: 'FILL' 1;">star</span>
+<span class="material-symbols-outlined text-sm" style="font-variation-settings: 'FILL' 1;">star</span>
+</div>
+</div>
+</div>
+<div class="space-y-4">
+<div class="grid grid-cols-2 gap-2 rounded-2xl overflow-hidden h-64 shadow-md">
+<img class="w-full h-full object-cover" data-alt="top view of thinning crown area on a woman's scalp before hair restoration" src="https://lh3.googleusercontent.com/aida-public/AB6AXuAlmBTEGzreiBLMHAXp5a-A6TO4knMdUvDgqTY6dZkDrp3uOzArDNFcUMs20029kyRGWc1kpzCC9jDeN_FjXEicuBmRCNBmXCIRc8N4-j3xdgWRUKWKa6REbuEY_npGdkPxVWGU1Pv9D44wxxk9dohIynLSUTYW8gDpj1qV7q7TM-k9eMynC9xUNl4zyqDwF_RBr012v5ute4BKtAjCSRZcUxk6K9Inxta_0FvsvJ5wLhxcA1y_i1SP8FKrqZ4iZAgfFj8KlcBhuRw"/>
+<img class="w-full h-full object-cover" data-alt="top view of thick healthy hair covering the crown area after using specialized growth serum" src="https://lh3.googleusercontent.com/aida-public/AB6AXuAifiUlXGSla7t_svVn1CefbLDJ1Ad9FZYHdX6Sy5CAZZ2iSIvTj9doJOLTIxBy_a5NvXkxggmt0Doom0bKwFHki68j6rmEXTRPy11_mcc0cP4PkJHwGRM1WqDQhgFGxNLT5YXYvSo4_CA3BG01EUSMjpjxDGiPORD5Dn_oCPGD2VswAk_rVs9Kq3BJDpoj1XCE7bR7qTa-6obd-2Znn69O3fOakTBmRVrUuIKorKvY0tZOYjwbUhEApUzmVQ8TPqbBP-5OZTj6wcM"/>
+</div>
+<div class="flex justify-between items-center px-2">
+<span class="text-sm font-bold uppercase tracking-widest text-on-surface-variant">Caso 03: 120 Días</span>
+<div class="flex text-[#ffb400]">
+<span class="material-symbols-outlined text-sm" style="font-variation-settings: 'FILL' 1;">star</span>
+<span class="material-symbols-outlined text-sm" style="font-variation-settings: 'FILL' 1;">star</span>
+<span class="material-symbols-outlined text-sm" style="font-variation-settings: 'FILL' 1;">star</span>
+<span class="material-symbols-outlined text-sm" style="font-variation-settings: 'FILL' 1;">star</span>
+<span class="material-symbols-outlined text-sm" style="font-variation-settings: 'FILL' 1;">star</span>
+</div>
+</div>
+</div>
+</div>
+<!-- Bento Grid Reviews -->
+<div class="grid grid-cols-1 md:grid-cols-3 gap-6">
+<div class="bg-surface-container-low p-8 rounded-3xl md:col-span-2">
+<div class="flex gap-1 text-[#ffb400] mb-4">
+<span class="material-symbols-outlined" style="font-variation-settings: 'FILL' 1;">star</span>
+<span class="material-symbols-outlined" style="font-variation-settings: 'FILL' 1;">star</span>
+<span class="material-symbols-outlined" style="font-variation-settings: 'FILL' 1;">star</span>
+<span class="material-symbols-outlined" style="font-variation-settings: 'FILL' 1;">star</span>
+<span class="material-symbols-outlined" style="font-variation-settings: 'FILL' 1;">star</span>
+</div>
+<p class="text-2xl font-bold mb-6 leading-tight text-on-surface">"Después de probar decenas de productos comerciales que solo dejaban mi cabello grasoso, Clinical Sanctuary es el único que realmente detuvo la caída y trajo nuevo crecimiento."</p>
+<div class="flex items-center gap-4">
+<div class="w-12 h-12 rounded-full bg-primary-container flex items-center justify-center font-bold text-primary">RH</div>
+<div>
+<p class="font-bold">Ricardo Herrera</p>
+<p class="text-sm text-on-surface-variant">Usuario desde hace 6 meses</p>
+</div>
+</div>
+</div>
+<div class="bg-primary text-on-primary p-8 rounded-3xl flex flex-col justify-center text-center">
+<p class="text-6xl font-black mb-2 tracking-tighter">4.9/5</p>
+<p class="text-sm uppercase tracking-widest font-bold opacity-80 mb-6">Calificación promedio</p>
+<div class="w-full h-1 bg-on-primary/20 rounded-full overflow-hidden">
+<div class="w-[98%] h-full bg-on-primary"></div>
+</div>
+<p class="mt-4 text-xs font-medium">Basado en 1,420 reseñas verificadas</p>
+</div>
+</div>
+</div>
+</section>
+<!-- CTA Final -->
+<section id="contacto-form" class="py-24 px-8 overflow-hidden relative scroll-mt-24">
+<div class="max-w-7xl mx-auto bg-signature-gradient rounded-[2.5rem] p-12 md:p-24 text-center relative overflow-hidden">
+<div class="absolute top-0 left-0 w-full h-full opacity-10 mix-blend-overlay">
+<div class="absolute inset-0 bg-[radial-gradient(circle_at_center,_var(--tw-gradient-stops))] from-white/20 via-transparent to-transparent"></div>
+</div>
+<div class="relative z-10">
+<h2 class="text-4xl md:text-6xl font-extrabold text-on-primary tracking-tight mb-8">¿Listo para volver a sentirte tú mismo?</h2>
+<p class="text-on-primary/80 text-xl max-w-2xl mx-auto mb-12">No dejes que pase un día más. Únete a los miles de hombres y mujeres que recuperaron su cabello y su confianza con nuestra ciencia.</p>
+<div class="max-w-lg mx-auto bg-surface p-8 rounded-2xl shadow-2xl text-left">
+<script src="https://js.hsforms.net/forms/embed/51270655.js" defer></script>
+<div class="hs-form-frame" data-region="na1" data-form-id="fe345aa2-f7b8-48b8-b065-4886619b287c" data-portal-id="51270655"></div>
+</div>
+<p class="text-on-primary/60 text-sm mt-8 font-medium">Garantía de satisfacción de 30 días o te devolvemos tu dinero.</p>
+</div>
+</div>
+</section>
+</main>
+<!-- Footer -->
+<footer class="bg-[#f2f4f3] dark:bg-[#191c1c] w-full py-12">
+<div class="max-w-7xl mx-auto px-12">
+<div class="flex flex-col md:flex-row justify-between items-start md:items-center gap-12 mb-12">
+<div>
+<span class="text-lg font-bold text-[#286954] dark:text-[#82CBB2] font-manrope text-sm uppercase tracking-widest block mb-4">CLINICAL SANCTUARY</span>
+<p class="text-[#3f4945] opacity-70 font-manrope text-sm uppercase tracking-widest max-w-xs leading-loose">Soluciones capilares de alta precisión fundamentadas en investigación científica avanzada.</p>
+</div>
+<div class="grid grid-cols-2 gap-12">
+<div class="space-y-4">
+<h4 class="font-bold text-[#286954] dark:text-[#82CBB2] font-manrope text-sm uppercase tracking-widest">Legal</h4>
+<div class="flex flex-col gap-2">
+<a class="text-[#3f4945] opacity-70 hover:opacity-100 transition-opacity font-manrope text-sm uppercase tracking-widest" href="#">Términos de Servicio</a>
+<a class="text-[#3f4945] opacity-70 hover:opacity-100 transition-opacity font-manrope text-sm uppercase tracking-widest" href="#">Política de Privacidad</a>
+<a class="text-[#3f4945] opacity-70 hover:opacity-100 transition-opacity font-manrope text-sm uppercase tracking-widest" href="#">Garantía de 30 Días</a>
+</div>
+</div>
+<div class="space-y-4">
+<h4 class="font-bold text-[#286954] dark:text-[#82CBB2] font-manrope text-sm uppercase tracking-widest">Soporte</h4>
+<div class="flex flex-col gap-2">
+<a class="text-[#3f4945] opacity-70 hover:opacity-100 transition-opacity font-manrope text-sm uppercase tracking-widest" href="#">Contacto</a>
+<a class="text-[#3f4945] opacity-70 hover:opacity-100 transition-opacity font-manrope text-sm uppercase tracking-widest" href="#">Preguntas Frecuentes</a>
+<a class="text-[#3f4945] opacity-70 hover:opacity-100 transition-opacity font-manrope text-sm uppercase tracking-widest" href="#">Envíos</a>
+</div>
+</div>
+</div>
+</div>
+<div class="pt-8 border-t border-outline-variant/20 flex flex-col md:flex-row justify-between items-center gap-6">
+<p class="text-[#3f4945] opacity-70 font-manrope text-sm uppercase tracking-widest">© 2024 CLINICAL SANCTUARY. CIENCIA CAPILAR AVANZADA.</p>
+<div class="flex gap-6">
+<a class="text-[#286954] opacity-70 hover:opacity-100 transition-all" href="#">
+<svg class="w-6 h-6 fill-current" viewbox="0 0 24 24"><path d="M24 12.073c0-6.627-5.373-12-12-12s-12 5.373-12 12c0 5.99 4.388 10.954 10.125 11.854v-8.385H7.078v-3.47h3.047V9.43c0-3.007 1.792-4.669 4.533-4.669 1.312 0 2.686.235 2.686.235v2.953H15.83c-1.491 0-1.956.925-1.956 1.874v2.25h3.328l-.532 3.47h-2.796v8.385C19.612 23.027 24 18.062 24 12.073z"></path></svg>
+</a>
+<a class="text-[#286954] opacity-70 hover:opacity-100 transition-all" href="#">
+<svg class="w-6 h-6 fill-current" viewbox="0 0 24 24"><path d="M12 2.163c3.204 0 3.584.012 4.85.07 3.252.148 4.771 1.691 4.919 4.919.058 1.265.069 1.645.069 4.849 0 3.205-.012 3.584-.069 4.849-.149 3.225-1.664 4.771-4.919 4.919-1.266.058-1.644.07-4.85.07-3.204 0-3.584-.012-4.849-.07-3.26-.149-4.771-1.699-4.919-4.92-.058-1.265-.07-1.644-.07-4.849 0-3.204.013-3.583.07-4.849.149-3.227 1.664-4.771 4.919-4.919 1.266-.057 1.645-.069 4.849-.069zm0-2.163c-3.259 0-3.667.014-4.947.072-4.358.2-6.78 2.618-6.98 6.98-.059 1.281-.073 1.689-.073 4.948 0 3.259.014 3.668.072 4.948.2 4.358 2.618 6.78 6.98 6.98 1.281.058 1.689.072 4.948.072 3.259 0 3.668-.014 4.948-.072 4.354-.2 6.782-2.618 6.979-6.98.059-1.28.073-1.689.073-4.948 0-3.259-.014-3.667-.072-4.947-.196-4.354-2.617-6.78-6.979-6.98-1.281-.059-1.69-.073-4.949-.073zm0 5.838c-3.403 0-6.162 2.759-6.162 6.162s2.759 6.163 6.162 6.163 6.162-2.759 6.162-6.163c0-3.403-2.759-6.162-6.162-6.162zm0 10.162c-2.209 0-4-1.79-4-4 0-2.209 1.791-4 4-4s4 1.791 4 4c0 2.21-1.791 4-4 4zm6.406-11.845c-.796 0-1.441.645-1.441 1.44s.645 1.44 1.441 1.44c.795 0 1.439-.645 1.439-1.44s-.644-1.44-1.439-1.44z"></path></svg>
+</a>
+</div>
+</div>
+</div>
+</footer>
+</body></html>
